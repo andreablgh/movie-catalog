@@ -1,0 +1,98 @@
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+.card {
+  width: 170px;
+  height: 250px;
+  margin-bottom: 15px;
+  display: inline-flex;
+  margin-right: 20px;
+  align-content: center;
+  position: relative;
+  background-color: transparent;
+}
+
+img {
+  display: block;
+  transition: opacity ease-out 250ms;
+  height: 250px;
+  width: 170px;
+  opacity: 1;
+}
+
+.card:hover img {
+  opacity: 0.4;
+}
+
+a {
+padding: 0;
+background-color: transparent;
+}
+
+.card-details {
+  position: absolute;
+  bottom: -5%;
+  left: 50%;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 150px;
+  text-overflow: ellipsis;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity ease-out 250ms;
+  color: white;
+  font-weight: bold;
+}
+
+.card:hover {
+  opacity: 1;
+}
+
+.card:hover .card-details {
+  opacity: 1;
+}
+
+.title {
+  padding: none;
+  padding-bottom: 5px;
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  text-overflow: ellipsis;
+  font-size: 20px;
+}
+
+
+.bposter {
+  width: 500px;
+  height: 500px;
+}
+
+
+
+@media only screen and (max-width: 650px) {
+  .card {
+    width: 85px;
+    height: 125px;
+  }
+
+  img {
+    height: 125px;
+  }
+
+  .card-details {
+    width: 80px;
+    bottom: -35%;
+  }
+
+  .sidebar {
+    visibility: hidden;
+  }
+
+  .container {
+    left: 0px;
+  }
+}

@@ -1,0 +1,93 @@
+html, body {
+  width: 100vw;
+  min-height: 100vh;
+  background: #bdc3c7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(bottom, #2c3e50, #bdc3c7);
+  background: -o-linear-gradient(bottom, #2c3e50, #bdc3c7);
+  background: linear-gradient(to top, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  overflow-x: hidden;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  background: #283048;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: relative;
+  display: block;
+  overflow: auto;
+}
+
+.container {
+  position: absolute;
+  left: 250px;
+  top: 120px;
+  width: auto;
+  padding-bottom: 70px;
+}
+
+.test {
+  background-color: #5bc149
+}
+
+.pagination {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  bottom: 2%;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  height: 10px;
+  width: 50px;
+  margin-bottom: auto;
+  padding: inherit;
+}
+
+.btn-icon {
+  font-size: 35px;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.btn-icon:hover {
+  color: white;
+}
+
+#page-nr {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: auto;
+  color: #0d3b29
+}
+
+span {
+  color: #0f110e;
+  font-weight: bold;
+}
+span.wall {
+  color: #424441;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.poster {
+  padding-right: 10px;
+  margin-right: none;
+  width: 250px;
+  height: 400px;
+}
+
+.card-header {
+  display: flex;
+}
+
+.movie-title {
+  height: 200px;
+}

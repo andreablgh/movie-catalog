@@ -1,0 +1,21 @@
+.back-to {
+  margin: auto;
+   width: 400px;
+   height: 50px;
+   padding: 10px;
+   background:#0d3b29;
+   color: white;
+   font-size: 17px;
+   border: none;
+   border-left: none;
+   cursor: pointer;
+   margin: auto;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.back-to:hover {
+     text-decoration: none;
+     color: white;
+     background:#09261b;
+}
