@@ -141,7 +141,7 @@ componentDidMount(e) {
           genUrl={this.state.genUrl}
         />
       <div className="container">
-        <h1> {this.state.genre} </h1>
+        <h1 id="genre-title"> {this.state.genre} </h1>
         <Movies
           movie={this.state.movie}
           getDetail={this.getDetail}
