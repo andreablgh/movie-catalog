@@ -27,14 +27,14 @@ class Movie extends Component {
         return (
           <div>
             <div key={this.state.movie.title} className="detail-card">
-              <div className="card-header">
+              <div className="detail-container">
                 <img className="poster" src={src} alt="bposter"/>
-                <div className="titl">
+                <div className="details">
+                <div className="title">
                   <h1 id="movie-title">{this.state.movie.title}</h1>
                   <p> {vote_average} </p>
                   <small>{vote_count} vote</small><hr/>
                 </div>
-              </div>
               <div className="movie-details">
                 <span> {releaseYear} </span>
                 <span className="wall">|</span>
@@ -46,6 +46,8 @@ class Movie extends Component {
               <div className="overview">
                 <h3>Overview</h3>
                   <p>{this.state.movie.overview}</p>
+              </div>
+              </div>
               </div>
             </div>
           </div>
