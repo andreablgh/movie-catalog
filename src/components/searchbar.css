@@ -54,11 +54,15 @@ margin-right: 25px;
    border-left: none;
    cursor: pointer;
    margin-left: 15px;
+   font-size: 18px;
 }
 
 .search-submit:hover {
-  background-color:  #737f88 ;
+  background-color: whitesmoke;
+  color: #0d3b29;
   cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .logo {

@@ -48,6 +48,7 @@ html, body {
   width: 50px;
   margin-bottom: auto;
   padding: inherit;
+  color: whitesmoke;
 }
 
 .btn-icon {
@@ -57,7 +58,7 @@ html, body {
 }
 
 .btn-icon:hover {
-  color: white;
+  color: #0d3b29;
 }
 
 #page-nr {

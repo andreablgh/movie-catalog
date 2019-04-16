@@ -1,5 +1,10 @@
 import React, {Component} from 'react';
 import './movie.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleLeft } from '@fortawesome/free-solid-svg-icons'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
+import { faThumbsUp } from '@fortawesome/free-solid-svg-icons'
+import {Link} from 'react-router-dom'
 
 
 const API_KEY = 'c49845d540467af838bcfec4d5ac0671';
@@ -26,21 +31,25 @@ class Movie extends Component {
       const src = `https://image.tmdb.org/t/p/w780/${poster_path}`
         return (
           <div>
+          <Link to="/" className="back-btn"><FontAwesomeIcon icon={faAngleLeft} /></Link>
             <div key={this.state.movie.title} className="detail-card">
               <div className="detail-container">
                 <img className="poster" src={src} alt="bposter"/>
                 <div className="details">
                 <div className="title">
                   <h1 id="movie-title">{this.state.movie.title}</h1>
-                  <p> {vote_average} </p>
-                  <small>{vote_count} vote</small><hr/>
+                  <FontAwesomeIcon className="icon" icon={faStar} /><small> {vote_average} </small>
+                  <div className="votecount">
+                    <FontAwesomeIcon className="icon" icon={faThumbsUp} /><small>{vote_count} vote</small>
+                  </div>
+                  <hr/>
                 </div>
               <div className="movie-details">
                 <span> {releaseYear} </span>
                 <span className="wall">|</span>
                 <span> Runtime: {runtime} min </span>
                 <span className="wall">|</span>
-                <span> Genres: bla blabla </span>
+                <span> Genres: Comedy, Romance, Thriller </span>
                 <span className="wall">|</span>
               </div>
               <div className="overview">
