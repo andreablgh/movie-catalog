@@ -1,6 +1,5 @@
 .wrapper {
   position: relative;
-  top: 75px;
   margin: auto;
   height: 600px;
   width: 400px;
@@ -8,14 +7,32 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
 
+.cont {
+  display: flex;
+}
+
+#back-btn {
+  vertical-align: center;
+  font-size: 55px;
+  width: 50px;
+  margin: 0px;
+  float: left;
+}
+
+#back-btn:hover {
+  color: #0d3b29;
+}
+
 .box-one {
-  position: absolute;
+  position: relative;
   top: 0;
   right: 0;
   box-sizing: border-box;
   width: 400px;
   height: 600px;
   padding: 40px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .login-input {
@@ -53,4 +70,28 @@
   width: 150px;
   margin: auto;
   margin-top: 20px;
+}
+
+.signin small {
+  color: whitesmoke;
+  font-size: 12px;
+text-align: center;
+  display: block;
+}
+
+#or-sign {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sign-btn {
+  font-size: 25px;
+  width: 30px;
+  display: inline-block;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.sign-btn:hover {
+  color: #0d3b29;
 }
